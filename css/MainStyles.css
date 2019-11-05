@@ -450,12 +450,11 @@ ul {
     header {
         position: fixed;
         z-index: 2;
-        background: white;
-        color: black;
-        font-size: 120%;
-        font-weight: bold;
+        background-color: #fff;
         width: 100%;
         padding: 0;
+        font-weight: bold;
+        font-size: 120%;
         top: 0;
         box-shadow: 5px 5px 10px rgb(160, 160, 160);
     }
@@ -467,6 +466,7 @@ ul {
     }
     header ul a {
         display: block;
+        padding: 10px 10px
     }
     header .logo {
         float: left;
