@@ -245,76 +245,105 @@ ul {
     header {
         position: fixed;
         z-index: 2;
-        background: white;
-        color: black;
-        font-size: 120%;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
+        background-color: #fff;
         width: 100%;
         padding: 0;
+        font-weight: bold;
+        font-size: 120%;
         top: 0;
         box-shadow: 5px 5px 10px rgb(160, 160, 160);
     }
-    header a {
-        color: black;
+    header ul {
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+        padding-left: 10px
     }
-    header ul li a:hover {
-        color: orange
+
+    header ul a {
+        display: block;
+        padding: 10px 10px;
+        border-bottom: .5px solid gray;
+        width: 10%
     }
-    header img:hover {
+    header ul li ul a {
+        display: block;
+        padding: 10px 10px;
+        border-bottom: .5px solid gray;
+        width: 9.3%
+    }
+    header ul li ul {
+        padding-left: 15px
+    }
+    header .logo {
+        float: left;
+        user-select: none;
+    }
+    header .logo:hover {
         opacity: .8;
     }
-    header > ul {
-        position: absolute;
-        right: 20px;
+    .header li a:hover, .header .menu-btn:hover {
+        background-color: #f4f4f4;
     }
-    header hr {
-        visibility: hidden;
-    }
-    li {
-        display: block;
-        position: relative;
-        text-decoration: none;
-        float: left;
-        padding: .4rem;
-    }
-    li:hover {
-        cursor: pointer;
-        color: orange;
-    }
-    ul li ul {
-        background: white;
-        color: black;
-        position: absolute;
-        overflow: hidden;
-        transition: height .5s ease;
-        font-size: 80%;
-        margin-top: 1rem;
-        left: 0;
-        z-index: 1;
-        top: 12px;
-        height: 0;
-        box-shadow: 5px 5px 10px rgb(160, 160, 160);
-        font-weight: normal;
-    }
-    ul .About:hover > ul, ul .About ul:hover {
-        z-index: 1;
-        height: 66px;
-        transform: translateY(0);
-    }
-    ul .Events:hover > ul, ul .Events ul:hover {
-        z-index: 1;
-        height: 118px;
-        transform: translateY(0);
-    }
-    ul li ul li {
+
+    header .menu {
         clear: both;
-        width: 100%;
-        padding-bottom: 0;
+        max-height: 0;
+        transition: max-height .2s ease-in;
     }
-    ul li ul li:first-of-type {
-        padding-top: 12px;
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 12px;
+        position: relative;
+        user-select: none;
+    }
+    .header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+    .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .header .menu-icon .navicon:before {
+        top: 5px
+    }
+    .header .menu-icon .navicon:after {
+        top: -5px
+    }
+    
+    .header .menu-btn {
+        display: none;
+    }
+    .header .menu-btn:checked ~ .menu {
+        max-height: 13em
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:before, .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        top: 0;
     }
 
     /* Grids */
@@ -460,22 +489,36 @@ ul {
     }
     header ul {
         margin: 0;
-        padding: 0;
         list-style: none;
         overflow: hidden;
+        background-color: #fff;
+        padding-left: 10px
     }
+
     header ul a {
         display: block;
-        padding: 10px 10px
+        padding: 10px 10px;
+        border-bottom: .5px solid gray;
+        width: 10%
+    }
+    header ul li ul a {
+        display: block;
+        padding: 10px 10px;
+        border-bottom: .5px solid gray;
+        width: 9.3%
+    }
+    header ul li ul {
+        padding-left: 15px
     }
     header .logo {
         float: left;
+        user-select: none;
     }
     header .logo:hover {
         opacity: .8;
     }
     .header li a:hover, .header .menu-btn:hover {
-    background-color: #f4f4f4;
+        background-color: #f4f4f4;
     }
 
     header .menu {
@@ -496,17 +539,17 @@ ul {
         display: block;
         height: 2px;
         position: relative;
-        transition: background .2s ease-out;
+        transition: all .2s ease-out;
         width: 18px;
     }
     .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
     }
     .header .menu-icon .navicon:before {
         top: 5px
@@ -514,28 +557,27 @@ ul {
     .header .menu-icon .navicon:after {
         top: -5px
     }
-
+    
     .header .menu-btn {
         display: none;
     }
     .header .menu-btn:checked ~ .menu {
-        max-height: 240px;
+        max-height: 13.5em
     }
     .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
+        background: transparent;
     }
 
     .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
+        transform: rotate(-45deg);
     }
 
     .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 
-    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
+    .header .menu-btn:checked ~ .menu-icon .navicon:before, .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        top: 0;
     }
 
     /* Grids */
