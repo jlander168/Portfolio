@@ -20,7 +20,6 @@ body {
 }
 a {
     text-decoration: none;
-    color: white
 }
 ul {
     list-style: none;
@@ -242,7 +241,7 @@ ul {
     }
 
     /* Header */
-    header {
+    .header {
         position: fixed;
         z-index: 2;
         background-color: #fff;
@@ -253,34 +252,40 @@ ul {
         top: 0;
         box-shadow: 5px 5px 10px rgb(160, 160, 160);
     }
-    header ul {
+    .header ul {
         margin: 0;
         list-style: none;
         overflow: hidden;
         background-color: #fff;
-        padding-left: 10px
+        padding-left: 10px;
+        color: black
+    }
+    header > hr {
+        display: none
     }
 
-    header ul a {
+    .header ul a {
         display: block;
         padding: 10px 10px;
         border-bottom: .5px solid gray;
-        width: 10%
+        color: black;
+        width: 12%
     }
-    header ul li ul a {
+    .header ul li ul a {
         display: block;
         padding: 10px 10px;
         border-bottom: .5px solid gray;
-        width: 9.3%
+        width: 11.3%
     }
-    header ul li ul {
+    .header ul li ul {
         padding-left: 15px
     }
-    header .logo {
+    .header .logo {
         float: left;
+        width: 6%;
         user-select: none;
     }
-    header .logo:hover {
+    .header .logo:hover {
         opacity: .8;
     }
     .header li a:hover, .header .menu-btn:hover {
@@ -328,7 +333,7 @@ ul {
         display: none;
     }
     .header .menu-btn:checked ~ .menu {
-        max-height: 13em
+        max-height: 15em
     }
     .header .menu-btn:checked ~ .menu-icon .navicon {
         background: transparent;
@@ -470,114 +475,91 @@ ul {
     body {
         font-family: 'RobotoSlab';
         margin: 0;
+
     }
     a {
         color: #000;
     }
 
     /* Header */
-    header {
+    .header {
         position: fixed;
         z-index: 2;
-        background-color: #fff;
+        background: white;
+        color: black;
+        font-size: 150%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
         width: 100%;
         padding: 0;
-        font-weight: bold;
-        font-size: 120%;
         top: 0;
         box-shadow: 5px 5px 10px rgb(160, 160, 160);
+        transition: .2s;
     }
-    header ul {
-        margin: 0;
-        list-style: none;
-        overflow: hidden;
-        background-color: #fff;
-        padding-left: 10px
+    .header a {
+        color: black;
     }
-
-    header ul a {
-        display: block;
-        padding: 10px 10px;
-        border-bottom: .5px solid gray;
-        width: 10%
+    .header ul li a:hover {
+        color: orange
     }
-    header ul li ul a {
-        display: block;
-        padding: 10px 10px;
-        border-bottom: .5px solid gray;
-        width: 9.3%
-    }
-    header ul li ul {
-        padding-left: 15px
-    }
-    header .logo {
-        float: left;
+    .header .logo {
         user-select: none;
+        width: 10%;
+        float: left;
+        transition: .2s;
     }
-    header .logo:hover {
+    .header .logo:hover {
         opacity: .8;
     }
-    .header li a:hover, .header .menu-btn:hover {
-        background-color: #f4f4f4;
-    }
-
-    header .menu {
-        clear: both;
-        max-height: 0;
-        transition: max-height .2s ease-in;
-    }
-    .header .menu-icon {
-        cursor: pointer;
-        display: inline-block;
-        float: right;
-        padding: 28px 12px;
-        position: relative;
-        user-select: none;
-    }
-    .header .menu-icon .navicon {
-        background: #333;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: all .2s ease-out;
-        width: 18px;
-    }
-    .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
-        background: #333;
-        content: '';
-        display: block;
-        height: 100%;
+    .header > ul {
         position: absolute;
-        transition: all .2s ease-out;
+        right: 20px;
+    }
+    .header hr {
+        visibility: hidden;
+    }
+    li {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        float: left;
+        padding: 1rem;
+    }
+    li:hover {
+        cursor: pointer;
+        color: orange;
+    }
+    ul li ul {
+        background: white;
+        color: black;
+        position: absolute;
+        overflow: hidden;
+        transition: height .5s ease;
+        font-size: 80%;
+        margin-top: 1.25rem;
+        left: 0;
+        z-index: 1;
+        top: 34px;
+        height: 0;
+        box-shadow: 5px 5px 10px rgb(160, 160, 160);
+        font-weight: normal;
+    }
+    ul li:hover > ul, ul li ul:hover {
+        z-index: 1;
+        height: 79px;
+        transform: translateY(0);
+    }
+    ul li ul li {
+        clear: both;
         width: 100%;
+        padding-bottom: 0;
     }
-    .header .menu-icon .navicon:before {
-        top: 5px
+    ul li ul li:first-of-type {
+        padding-top: 12px;
     }
-    .header .menu-icon .navicon:after {
-        top: -5px
-    }
-    
-    .header .menu-btn {
+    .header input {
         display: none;
-    }
-    .header .menu-btn:checked ~ .menu {
-        max-height: 13.5em
-    }
-    .header .menu-btn:checked ~ .menu-icon .navicon {
-        background: transparent;
-    }
-
-    .header .menu-btn:checked ~ .menu-icon .navicon:before {
-        transform: rotate(-45deg);
-    }
-
-    .header .menu-btn:checked ~ .menu-icon .navicon:after {
-        transform: rotate(45deg);
-    }
-
-    .header .menu-btn:checked ~ .menu-icon .navicon:before, .header .menu-btn:checked ~ .menu-icon .navicon:after {
-        top: 0;
     }
 
     /* Grids */
@@ -588,8 +570,6 @@ ul {
         background-color: #fff;
         overflow-wrap: break-word;
         grid-gap: 10px;
-        max-width: 75%;
-        margin: 0 auto;
         position: relative;
         box-shadow: 0 0 30px 20px rgb(116, 116, 116);;
     }

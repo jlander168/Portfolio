@@ -5,16 +5,44 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/MainStyles.css">
         <link rel="icon" href="images/icon.jpg" type="image/x-icon" sizes="16x16 32x32">
+        <script>
+            // When the user scrolls down 50px from the top of the document, resize the header's font size 
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "150%";
+                document.getElementById("logo").style.width = "10%";
+                document.getElementById("menu").style.top = "0px";
+                document.getElementById("submenu").style.marginTop = "1.25rem";
+              } else {
+                document.getElementById("header").style.fontSize = "225%";
+                document.getElementById("logo").style.width = "20%";
+                document.getElementById("menu").style.top = "15px";
+                document.getElementById("submenu").style.marginTop = "3.7rem";
+                    $("ul li").mouseover(function() {
+                        $("ul li").css("height", "200px");
+                    });
+                    $("ul li ul").mouseover(function() {
+                        $("ul li ul").css("height", "200px");
+                    });
+                }
+            }
+            // test.addEventListener("mouseover", function( event ) {   
+            // highlight the mouseover target
+            // event.target.style.color = "orange";
+        </script>
     </head>
     <body>
-        <header class="header">
-            <a href=""><img src="images/logo.jpg" width="5%" class="logo"></a>
+        <header class="header" id="header">
+            <a href=""><img src="images/logo.jpg" class="logo" id="logo"></a>
+            <hr>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="">Home</a></li>
                 <li><a href="">Resume Page</a>
-                    <ul>
+                    <ul id="submenu">
                         <li><a href="">Blank</a></li>
                         <li><a href="">Blank</a></li>
                     </ul>
@@ -23,5 +51,64 @@
                 <li><a href="">Contact Us</a></li>
             </ul>
         </header>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+        <div class="grid-container">
+            <div class="box sec2">
+                <h2>About</h2>
+                <hr>
+                <a href="Location.html"><img src="images/logo.jpg" width="100%" height="80%"></a>
+            </div>
+            <div class="box sec3">
+                <h2>Location</h2>
+                <hr>
+                <a href="Location.html"><img src="images/logo.jpg" width="100%" height="80%"></a>
+            </div>
+            <div class="box sec4">
+                <h2>Events</h2>
+                <hr>
+                <a href="Events.html"><img src="images/logo.jpg" width="100%" height="100%"></a> 
+            </div>
+
+            <footer class="footer">
+                <h3>Contact</h3>
+                <hr>
+                <p>
+                <a href="https://goo.gl/maps/mViF9wmmxhgpKqZ3A" target="_blank">
+                1617 W. Williams Drive</br>
+                Phoenix, AZ 85027</br>
+                </a>
+                <a href="tel:623.877.6914">623.877.6914</a>
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
