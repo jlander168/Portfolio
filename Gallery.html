@@ -3,14 +3,15 @@
     <head>
         <title>Portfolio</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/MainStyles.css">
+        <link rel="stylesheet" type="text/css" href="css/Gallery.css">
         <link rel="icon" href="images/icon.jpg" type="image/x-icon" sizes="16x16 32x32">
+        <script type="text/javascript" src="Gallery.js"></script>  
         <script>
             // When the user scrolls down 50px from the top of the document, resize the header's font size 
             window.onscroll = function() {scrollFunction()};
             
             function scrollFunction() {
-              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
                 document.getElementById("header").style.fontSize = "150%";
                 document.getElementById("logo").style.width = "10%";
                 document.getElementById("menu").style.top = "0px";
@@ -21,7 +22,15 @@
                 document.getElementById("menu").style.top = "15px";
                 document.getElementById("submenu").style.marginTop = "3.7rem";
               }
-            }    
+            }
+            $('.hover').mouseover(function() {
+                $('.text1').css("visibility","visible");
+            });
+            
+            $('.hover').mouseout(function() {
+                $('.text1').css("visibility","hidden");
+            });
+  
         </script>
     </head>
     <body>
@@ -31,61 +40,29 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu" id="menu">
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="">Resume Page</a>
                     <ul id="submenu">
                         <li><a href="">Blank</a></li>
                         <li><a href="">Blank</a></li>
                     </ul>
                 </li>
-                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="">Gallery</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
         </header>
-    </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
         <div class="grid-container">
             <div class="box sec2">
-                <h2>About</h2>
-                <hr>
-                <a href="Location.html"><img src="images/logo.jpg" width="100%" height="80%"></a>
+                <a href="CodingSite/index.html" target="_blank"><img src="images/CodingSite2.PNG" width="100%"></a>
+                <div class="overlay">
+                    <h2>Coding Site</h2>
+                    <p>This site is an assignment made for a website for the West-Mec site</p>
+                </div>
             </div>
             <div class="box sec3">
-                <h2>Location</h2>
-                <hr>
                 <a href="Location.html"><img src="images/logo.jpg" width="100%" height="80%"></a>
             </div>
             <div class="box sec4">
-                <h2>Events</h2>
-                <hr>
                 <a href="Events.html"><img src="images/logo.jpg" width="100%" height="100%"></a> 
             </div>
 
