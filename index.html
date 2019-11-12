@@ -19,13 +19,14 @@
                 document.getElementById("header").style.fontSize = "225%";
                 document.getElementById("logo").style.width = "20%";
                 document.getElementById("menu").style.top = "15px";
+                document.getElementById("menu").onmousehover = function()
+                {
+                    this.style.height = "200px";
+                }
                 document.getElementById("submenu").style.marginTop = "3.7rem";
-                    $("ul li").mouseover(function() {
-                        $("ul li").css("height", "200px");
-                    });
-                    $("ul li ul").mouseover(function() {
-                        $("ul li ul").css("height", "200px");
-                    });
+                document.getElementById("submenu").onmousehover = function()
+                {
+                    this.style.height = "200px";
                 }
             }
             // test.addEventListener("mouseover", function( event ) {   
