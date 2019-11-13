@@ -475,7 +475,6 @@ ul {
     body {
         font-family: 'RobotoSlab';
         margin: 0;
-
     }
     a {
         color: #000;
@@ -487,7 +486,7 @@ ul {
         z-index: 2;
         background: white;
         color: black;
-        font-size: 150%;
+        font-size: 225%;
         font-weight: bold;
         display: flex;
         justify-content: center;
@@ -505,7 +504,7 @@ ul {
     }
     .header .logo {
         user-select: none;
-        width: 10%;
+        width: 20%;
         float: left;
         transition: .2s;
     }
@@ -515,6 +514,8 @@ ul {
     .header > ul {
         position: absolute;
         right: 20px;
+        top: 15px;
+
     }
     .header hr {
         visibility: hidden;
@@ -537,7 +538,7 @@ ul {
         overflow: hidden;
         transition: height .5s ease;
         font-size: 80%;
-        margin-top: 1.25rem;
+        margin-top: 3.7rem;
         left: 0;
         z-index: 1;
         top: 34px;

@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Abhaya";
+    src: url("fonts/AbhayaLibre-Regular.ttf") format('truetype');
+}
+
+html {
+    background-image: url(../images/phoenix-03.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body {
+    background-color: rgb(252, 217, 173);
+    width: 95%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Abhaya";
+}
+h2 {
+    font-size: 300%;
+}
+/* Nav Bar */
+header {
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(150, 150, 150);
+    width: 95%;
+    max-width: 1200px;
+}
+header a {
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    color: black;
+    padding: 20px 12px;
+}
+header a:hover, header a:active {
+    color:rgb(77, 77, 77);
+    background-color: rgb(165, 165, 165)
+}
+header img {
+    float: left;
+    display: block;
+}
+
+/* Aside Imgs */
+.img-aside1 {
+    animation-name: imgs;
+    animation-duration: 2s;
+}
+.img-aside2 {
+    animation-name: imgs;
+    animation-duration: 3s;
+}
+.img-aside3 {
+    animation-name: imgs;
+    animation-duration: 4s;
+}
+.img-aside4 {
+    animation-name: imgs;
+    animation-duration: 5s;
+}
+.img-aside5 {
+    animation-name: imgs;
+    animation-duration: 6s;
+}
+.img-aside6 {
+    animation-name: imgs;
+    animation-duration: 7s;
+}
+@keyframes imgs {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+aside a {
+    text-decoration: none;
+    color: black;
+}
+aside a:hover, aside a:active {
+    color: rgb(138, 138, 138);
+    
+}
+/* Footer Images */
+footer img {
+    width: 5%;
+    position: absolute;
+    text-align: none;
+}
+.instagram {
+    width: 3.73%;
+    right: 507px;
+    bottom: -99px;
+}
+.twitter {
+    left: 450px;
+    bottom: -108px;
+}
+.facebook {
+    width: 5.5%;
+    bottom: -110px;
+    left: 540px;
+}
+/* Hover Styles */
+aside.box img {
+    position: relative;
+    transition: .5s;
+}
+aside.box img:hover {
+    transform: scale(.9);
+    transition: .5s;
+    box-shadow: 7px 7px 25px black;
+}
+/* Caption */
+figcaption a{
+    text-decoration: none;
+    color: black;
+    font-size: 75%;
+}
+figcaption a:hover, figcaption a:active{
+    color: rgb(138, 138, 138);
+}
+.box > a {
+    text-decoration: underline;
+    color: black
+}
+.box > a:hover, .box > a.active {
+    color: rgb(138, 138, 138);
+}
