@@ -470,11 +470,12 @@ ul {
     /* Main */
     html {
         width: 100%;
-        background-color: rgb(219, 219, 219);
+        background-color: rgb(255, 255, 255);
     }
     body {
         font-family: 'RobotoSlab';
         margin: 0 auto;
+        padding-top: 8%;
     }
     a {
         color: #000;
@@ -563,55 +564,38 @@ ul {
         display: none;
     }
 
-    /* Grids */
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5% auto 18% auto auto auto;
-        background-color: #fff;
-        overflow-wrap: break-word;
-        grid-gap: 10px;
+    /* Main Styles */
+    #content {
         position: relative;
-        box-shadow: 0 0 30px 20px rgb(116, 116, 116);
+        border: solid 2px black;
+        
+        border-top: 0
     }
-    .box {
-        display: block;
-        padding: 10px;
-        overflow-wrap: break-word;
+    #middle {
+        display: flex;
+        background-color: rgba(252, 170, 63);
+        box-shadow: 0px 0px 1px 10px gray;
     }
-    .sec2 {
-        grid-column: 1;
-        grid-row: 3;
+    .info1 {
+        background-color: rgba(252, 170, 63);
+        color: rgba(32, 32, 32, .9);
+        align-self: center;
     }
-    .sec3 {
-        grid-column: 2;
-        grid-row: 4;
+    .info1 h2 {
+        font-size: 400%;
+        text-decoration: underline;
     }
-    .sec4 {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    .footer {
-        grid-column: 1 / 5;
-        grid-row: 6;
-    }
-
-    /* Sec 1 */
-    .sec1 {
-        display: block;
-    }
-    .sec1 > img {
-        opacity: .9;
+    .info1 p {
+        font-size: 150%;
     }
 
     /* Boxes */
-    .sec2, .sec3, .sec4 {
+    .box {
         text-align: center;
     }
     .box img {
         position: relative;
         transition: all .5s ease;
-        user-select: none;
     }
     .overlay {
         position: relative;
