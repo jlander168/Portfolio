@@ -1,19 +1,24 @@
 @font-face {
-    font-family: 'RobotoSlab';
-    src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-family: 'Coustard';
+    src: url('fonts/Coustard-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'FredokaOne';
-    src: url('fonts/FredokaOne-Regular.ttf') format('truetype');
+    font-family: 'Graduate';
+    src: url('fonts/Graduate-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'ArchivoBlack';
-    src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype');
+    font-family: 'LexendDeca';
+    src: url('fonts/LexendDeca-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'PressStart2P';
-    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-family: 'LobsterTwo';
+    src: url('fonts/LobsterTwo-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'RacingSansOne';
+    src: url('fonts/RacingSansOne-Regular.ttf') format('truetype');
+}
+
 
 body {
     padding-top: 3%;
