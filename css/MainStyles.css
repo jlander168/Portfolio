@@ -3,10 +3,6 @@
     src: url('fonts/Coustard-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Graduate';
-    src: url('fonts/Graduate-Regular.ttf') format('truetype');
-}
-@font-face {
     font-family: 'LexendDeca';
     src: url('fonts/LexendDeca-Regular.ttf') format('truetype');
 }
@@ -17,6 +13,22 @@
 @font-face {
     font-family: 'RacingSansOne';
     src: url('fonts/RacingSansOne-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bubblegum Sans', cursive;
+    src: url('fonts/BubblegumSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Capriola', sans-serif;
+    src: url('fonts/Capriola-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cambo', serif;
+    src: url('fonts/Cambo-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cutive', serif;
+    src: url('fonts/Cutive-Regular.ttf') format('truetype');
 }
 
 
@@ -480,6 +492,7 @@ ul {
     body {
         font-family: 'RobotoSlab';
         margin: 0;
+        background: rgb(96,214,255);
     }
     a {
         color: #000;
@@ -573,11 +586,10 @@ ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        background-color: #fff;
         overflow-wrap: break-word;
         grid-gap: 10px;
         position: relative;
-        box-shadow: 0 0 30px 20px rgb(116, 116, 116);;
+        box-shadow: 0 0 30px 20px rgb(116, 116, 116);
     }
     .box {
         display: block;
@@ -587,9 +599,9 @@ ul {
         border: 2px solid orange;
         border-radius: 10px;
     }
-    .sec1 {
+    .h1 {
         grid-column: 1 / 4;
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
     }
     .sec2 {
         grid-column: 1;
@@ -608,14 +620,22 @@ ul {
         grid-row: 4;
     }
 
-    /* Sec 1 */
-    .sec1 {
-        display: block;
+    /* H1 */
+    .h1 {
+        text-decoration: underline;
+        padding: 8% 20%;
+        text-align: center;
+        font-size: 400%;
+        color: rgb(0, 0, 0);
+        font-family: 'Capriola', sans-serif;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        position: relative;
     }
-    .sec1 > img {
-        opacity: .9;
+    @keyframes fade-in {
+        from {top: 150px; opacity: 0;}
+        to {top: 0px; opacity: 1;}
     }
-
     /* Boxes */
     .sec2, .sec3, .sec4 {
         justify-self: center;

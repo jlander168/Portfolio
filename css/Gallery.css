@@ -589,12 +589,18 @@ ul {
     }
     .h1 {
         text-decoration: underline;
-        padding: 20%;
-        padding-top: 12%;
+        padding: 12% 20%;
         text-align: center;
         font-size: 400%;
         color: rgb(219, 250, 255);
-        font-family: 'Capriola', sans-serif
+        font-family: 'Capriola', sans-serif;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        position: relative;
+    }
+    @keyframes fade-in {
+        from {top: 150px; opacity: 0;}
+        to {top: 0px; opacity: 1;}
     }
     .middle1 {
         display: flex;
