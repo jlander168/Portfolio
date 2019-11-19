@@ -605,14 +605,20 @@ ul {
     .middle1 {
         display: flex;
         background-color: rgb(252, 170, 63);
+        animation-name: fade-in;
+        animation-duration: 1s;
     }
     .middle2 {
         display: flex;
         background-color: rgb(253, 206, 145);
+        animation-name: fade-in;
+        animation-duration: 1s;
     }
     .middle3 {
         display: flex;
         background-color: rgb(190, 190, 190);
+        animation-name: fade-in;
+        animation-duration: 1s;
     }
     .info1, .info2, .info3 {
         color: rgba(32, 32, 32, .9);
