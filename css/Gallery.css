@@ -585,7 +585,7 @@ ul {
     #content {
         position: relative;
         background: rgb(96,214,255);
-        background: linear-gradient(180deg, rgba(96,214,255,1) 33%, rgba(255,166,0,1) 50%, rgba(245,199,158,0.6589986336331408) 73%, rgba(211,211,244,1) 89%);
+        background: linear-gradient(180deg, rgba(96,214,255,1) 33%, rgb(226, 171, 69) 50%, rgba(240, 181, 129, 0.863) 73%, rgba(141, 141, 141, 0.877) 90%);
     }
     .h1 {
         text-decoration: underline;
@@ -605,20 +605,14 @@ ul {
     .middle1 {
         display: flex;
         background-color: rgb(252, 170, 63);
-        animation-name: fade-in;
-        animation-duration: 1s;
     }
     .middle2 {
         display: flex;
         background-color: rgb(253, 206, 145);
-        animation-name: fade-in;
-        animation-duration: 1s;
     }
     .middle3 {
         display: flex;
         background-color: rgb(190, 190, 190);
-        animation-name: fade-in;
-        animation-duration: 1s;
     }
     .info1, .info2, .info3 {
         color: rgba(32, 32, 32, .9);
