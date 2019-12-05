@@ -727,24 +727,21 @@ ul {
     
     /* Footer */
     .footer {
-        background-color: rgb(66, 66, 66);
-        border-top: 2px solid orange;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
+        background-color: rgb(187, 207, 216);
         text-align: center;
-        color: rgb(226, 226, 226);
-    }
-    .footer hr {
-        visibility: visible;
-        border: 1.5px solid rgb(49, 49, 49);
-        width: 20%;
+        color: rgb(94, 136, 155);
+        font-size: 175%;
     }
     .footer h3 {
-        color: gray;
         font-weight: bold;
     }
     .footer a {
-        color: rgb(226, 226, 226);
+        display: block;
+        text-align: center;
+    }
+    .footer div {
+        display: flex;
+        width: 20%;
+        margin: 0 auto
     }
 }
