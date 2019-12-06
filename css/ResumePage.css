@@ -585,59 +585,6 @@ ul {
         display: none;
     }
 
-    /* Grids */
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        overflow-wrap: break-word;
-        position: relative;
-    }
-    .box {
-        display: block;
-        padding: 10px 60px 10px 60px;
-        background-color: rgb(207, 207, 207);
-        overflow-wrap: break-word;
-    }
-    .h1 {
-        grid-column: 1 / 5;
-        grid-row: 1 / 2;
-    }
-    .img1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .img2 {
-        grid-column: 4;
-        grid-row: 1;
-    }
-    .space {
-        grid-column: 1 / 5;
-        grid-row: 2;
-        visibility: hidden;
-    }
-    .about {
-        grid-column: 2 / 4;
-        grid-row: 3;
-    }
-    .sec2 {
-        grid-column: 2;
-        grid-row: 4;
-    }
-    .sec3 {
-        grid-column: 3;
-        grid-row: 4;
-    }
-    .sec4 {
-        grid-column: 1 / 5;
-        grid-row: 5;
-        visibility: hidden;
-    }
-    .footer {
-        grid-column: 1 / 5;
-        grid-row: 6;
-    }
-
     /* H1 */
     .h1 {
         padding: 12% 20% 16% 20%;
@@ -655,75 +602,72 @@ ul {
         from {top: 150px; opacity: 0;}
         to {top: 0px; opacity: 1;}
     }
-    .img1, .img2 {
-        position: relative;
-        top: 200px;
-        z-index: 1;
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
     }
-    .img1 {
-        animation-name: fade-image;
-        animation-duration: 1s;
-        left: 50px
-    }
-    .img2 {
-        animation-name: fade-image2;
-        animation-duration: 1s;
-        right: 10px
-    }
-    @keyframes fade-image {
-        from {left: -350px; opacity: 0;}
-        to {left: 50px; opacity: 1;}
-    }
-    @keyframes fade-image2 {
-        from {right: -350px; opacity: 0;}
-        to {right: 10px; opacity: 1;}
-    }
-    .space hr {
-        margin: 50px
-    }
-    /* Boxes */
-    .about {
+
+    /* Top */
+    .top {
         text-align: center;
-        font-size: 300%;
+        line-height: 5px;
+    }
+    .top h2 {
         font-weight: bold;
-        background-color: rgb(92, 148, 175);
-    }
-    .about h2 {
-        margin: 2px 0 0 0 ;
-    }
-    .about hr {
-        width: 30%;
-        border: 0;
-        border-top: 4px solid black;
-        margin: 0 auto 3% auto;
-    }
-    .section {
-        text-align: center;
-        font-size: 200%;
-    }
-    .section h2 {
         font-size: 150%;
-        margin-top: 10px;
-        margin-bottom: 0;
     }
-    .section hr {
-        visibility: visible;
-        border: 0;
-        border-top: 3px solid rgba(110, 110, 110, 0.733);
-        width: 100%;
-        margin: 2% auto 0 auto
+    .top p {
+        font-size: 110%;
     }
-    .section p {
-        font-size: 60%;
+
+    /* Profile */
+    .profile h3 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        margin-bottom: 5px;
     }
-    .sec2 {
-        background-color: rgb(152, 190, 200)
+    .profile p {
+        font-size: 100%;
+        margin-top: 5px
     }
-    .sec3 {
-        background-color: rgb(203, 221, 221);
+
+    /* Skills */
+    .skills h3 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        margin-bottom: 5px;
     }
-    .sec4 hr {
-        margin: 50px
+    .skills p {
+        font-size: 100%;
+        margin-top: 5px;
+        line-height: 1.25em;
+    }
+
+    /* Education */
+    .education h3 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .education .p {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .education .p p {
+        display: block;
+        margin: 5px 0 0 0;
+    }
+    .education > p {
+        font-size: 100%;
+        margin-top: 5px;
+    }
+    .education h3:nth-of-type(2) {
+        text-align: left;
+        font-size: 110%;
     }
     
     /* Footer */

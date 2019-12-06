@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Portfolio - Gallery</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/Gallery.css">
         <link rel="icon" href="images/icon.jpg" type="image/x-icon" sizes="16x16 32x32">
@@ -10,17 +10,16 @@
             window.onscroll = function() {scrollFunction()};
             
             function scrollFunction() {
-              if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("header").style.fontSize = "150%";
                 document.getElementById("logo").style.width = "10%";
                 document.getElementById("menu").style.top = "0px";
-                document.getElementById("submenu").style.marginTop = "1.25rem";
-              }
-               else {
-                document.getElementById("header").style.fontSize = "225%";
+                document.getElementById("submenu").style.marginTop = "1.65rem";
+              } else {
+                document.getElementById("header").style.fontSize = "200%";
                 document.getElementById("logo").style.width = "17%";
                 document.getElementById("menu").style.top = "15px";
-                document.getElementById("submenu").style.marginTop = "3.7rem";
+                document.getElementById("submenu").style.marginTop = "3.33rem";
               }
             }
         </script>
@@ -29,25 +28,25 @@
         <header class="header" id="header">
             <a href="index.html"><img src="images/capture.PNG" class="logo" id="logo"></a>
             <hr>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <input class="menu-btn" type="checkbox section " id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu" id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Resume Page</a>
                     <ul id="submenu">
-                        <li><a href="">Blank</a></li>
+                        <li><a href="ResumePage.html">Resume Page</a></li>
                         <li><a href="">Blank</a></li>
                     </ul>
                 </li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </header>
         <div id="content" class="container">
             <div class="h1">
                 <h1>Gallery</h1>
             </div>
-            <div class="middle1 hideme" id="m1">
+            <div class="middle1 hideme">
                 <div class="box sec2">
                     <a href="CodingSite/index.html" target="_blank"><img src="images/CodingSite2.PNG" width="90%" style="float:left"></a>
                 </div>
@@ -62,7 +61,7 @@
         </br>
         </br>
         </br>
-            <div class="middle2 hideme" >
+            <div class="middle2 hideme">
                 <div class="box sec3">
                     <a href="PhoenixTravelSite/index.html" target="_blank"><img src="images/PhoenixSite.PNG" width="90%" style="float:left"></a>
                 </div>
@@ -86,12 +85,13 @@
                     <p>This site is an assignment made to create a website about our favorite childhood toy. I chose Super Smash Bros Brawl for the Wii.</p>
                 </div>
             </div>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
         </div>
+        <footer class="footer">
+            <h3>Contact</h3>
+            <div>
+                <a href="mailto:jalan902@learner.dvusd.org"><img src="images/gmail.png" width="30%"></a>
+                <a href="https://github.com/jlander168" target="_blank"><img src="images/github.png" width="24%"></a>
+            </div>
+        </footer>
     </body>
 </html>

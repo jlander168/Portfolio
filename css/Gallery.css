@@ -502,17 +502,18 @@ ul {
     .header {
         position: fixed;
         z-index: 2;
-        background: rgb(255, 255, 255);
+        background: white;
         color: black;
-        font-size: 225%;
+        font-size: 200%;
         font-weight: bold;
         display: flex;
         justify-content: center;
         width: 100%;
         padding: 0;
         top: 0;
-        box-shadow: 5px 5px 10px rgb(82, 82, 82);
+        box-shadow: 5px 5px 10px rgb(160, 160, 160);
         transition: .2s;
+        font-family: 'Capriola', sans-serif;
     }
     .header a {
         color: black;
@@ -557,13 +558,15 @@ ul {
         overflow: hidden;
         transition: height .5s ease;
         font-size: 80%;
-        margin-top: 3.7rem;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         top: 34px;
         height: 0;
         box-shadow: 5px 5px 10px rgb(160, 160, 160);
         font-weight: normal;
+    }
+    #submenu {
+        margin-top: 3.2rem;
     }
     ul li:hover > ul, ul li ul:hover {
         z-index: 1;
@@ -642,5 +645,27 @@ ul {
     }
     .sec4:hover img {
         opacity: .75;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: rgb(138, 138, 138);
+        text-align: center;
+        color: rgb(66, 66, 66);
+        padding-top: .1px
+    }
+    .footer h3 {
+        font-weight: bold;
+        margin: 15px 0 5px;
+        font-size: 32px;
+    }
+    .footer a {
+        display: block;
+        text-align: center;
+    }
+    .footer div {
+        display: flex;
+        width: 20%;
+        margin: 0 auto
     }
 }
