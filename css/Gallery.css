@@ -501,7 +501,7 @@ ul {
     /* Header */
     .header {
         position: fixed;
-        z-index: 2;
+        z-index: 3;
         background: white;
         color: black;
         font-size: 200%;
@@ -551,36 +551,6 @@ ul {
         cursor: pointer;
         color: orange;
     }
-    ul li ul {
-        background: white;
-        color: black;
-        position: absolute;
-        overflow: hidden;
-        transition: height .5s ease;
-        font-size: 80%;
-        left: 0;
-        z-index: 2;
-        top: 34px;
-        height: 0;
-        box-shadow: 5px 5px 10px rgb(160, 160, 160);
-        font-weight: normal;
-    }
-    #submenu {
-        margin-top: 3.2rem;
-    }
-    ul li:hover > ul, ul li ul:hover {
-        z-index: 1;
-        height: 140%;
-        transform: translateY(0);
-    }
-    ul li ul li {
-        clear: both;
-        width: 100%;
-        padding-bottom: 0;
-    }
-    ul li ul li:first-of-type {
-        padding-top: 12px;
-    }
     .header input {
         display: none;
     }
@@ -592,18 +562,19 @@ ul {
         background: linear-gradient(180deg, rgba(96,214,255,1) 33%, rgb(226, 171, 69) 50%, rgba(240, 181, 129, 0.863) 73%, rgba(141, 141, 141, 0.877) 90%);
     }
     .h1 {
-        text-decoration: underline;
-        padding: 12% 20%;
+        padding: 8% 20% 12%;
         text-align: center;
-        font-size: 400%;
+        font-size: 500%;
         color: rgb(219, 250, 255);
         font-family: 'Capriola', sans-serif;
+    }
+    h1 {
         animation-name: fade-in;
         animation-duration: 1s;
         position: relative;
     }
     @keyframes fade-in {
-        from {top: 150px; opacity: 0;}
+        from {top: 100px; opacity: 0;}
         to {top: 0px; opacity: 1;}
     }
     .middle1 {

@@ -486,13 +486,12 @@ ul {
     /* Main */
     html {
         width: 100%;
-        background-color: rgb(255, 255, 255);
     }
     body {
         font-family: 'RobotoSlab';
         margin: 0 auto;
         padding-top: 5%;
-        background: white
+        background: rgb(96,214,255);
     }
     a {
         color: #000;
@@ -551,36 +550,6 @@ ul {
         cursor: pointer;
         color: orange;
     }
-    ul li ul {
-        background: white;
-        color: black;
-        position: absolute;
-        overflow: hidden;
-        transition: height .5s ease;
-        font-size: 80%;
-        left: 0;
-        z-index: 2;
-        top: 34px;
-        height: 0;
-        box-shadow: 5px 5px 10px rgb(160, 160, 160);
-        font-weight: normal;
-    }
-    #submenu {
-        margin-top: 3.2rem;
-    }
-    ul li:hover > ul, ul li ul:hover {
-        z-index: 1;
-        height: 140%;
-        transform: translateY(0);
-    }
-    ul li ul li {
-        clear: both;
-        width: 100%;
-        padding-bottom: 0;
-    }
-    ul li ul li:first-of-type {
-        padding-top: 12px;
-    }
     .header input {
         display: none;
     }
@@ -592,11 +561,11 @@ ul {
         grid-template-rows: auto auto auto auto;
         overflow-wrap: break-word;
         position: relative;
+        background: rgb(96,214,255);
     }
     .box {
         display: block;
         padding: 10px 60px 10px 60px;
-        background-color: rgb(207, 207, 207);
         overflow-wrap: break-word;
     }
     .h1 {
@@ -618,12 +587,14 @@ ul {
 
     /* Main Styles */
     .h1 {
-        text-decoration: underline;
-        padding: 12% 20%;
+        padding: 8% 20% 12%;
         text-align: center;
-        font-size: 400%;
-        color: rgb(0, 0, 0);
+        font-size: 500%;
+        color: rgb(255, 255, 255);
         font-family: 'Capriola', sans-serif;
+        background: rgb(96,214,255);
+    }
+    h1 {
         animation-name: fade-in;
         animation-duration: 1s;
         position: relative;
@@ -632,8 +603,35 @@ ul {
         from {top: 150px; opacity: 0;}
         to {top: 0px; opacity: 1;}
     }
-
     .sec1, .sec2, .sec3 {
         text-align: center;
+        font-size: 110%;
+        font-family: 'Capriola', sans-serif;
+    }
+    .sec1 {
+        background-color: rgb(203, 221, 221);
+    }
+    .sec2 {
+        background-color: rgb(152, 190, 200)
+    }
+    .sec3 {
+        background-color: rgb(92, 148, 175);
+    }
+    .sec1 h2, .sec2 h2, .sec3 h2 {
+        color: rgba(0, 0, 0, 0.685);
+        font-size: 110%;
+    }
+    p a {
+        color: white;
+        transition: all .2s ease-in;
+    }
+    p a:hover {
+        color: rgba(255, 255, 255, 0.521);
+    }
+    div img {
+        transition: all .5s ease-out;
+    }
+    div img:hover {
+        transform: scale(1.2);
     }
 }
