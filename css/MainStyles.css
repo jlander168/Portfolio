@@ -250,7 +250,6 @@ ul {
         visibility: hidden;
     }
 
-    
     /* Footer */
     .footer {
         background-color: rgb(134, 196, 219);
@@ -279,7 +278,7 @@ ul {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     /* Main */
     html {
         width: 100%;

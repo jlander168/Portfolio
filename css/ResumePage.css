@@ -156,19 +156,19 @@ ul {
         margin-bottom: 5px;
     }
     .profile p {
-        font-size: 100%;
+        font-size: 130%;
         margin-top: 5px
     }
 
     /* Skills */
     .skills h3 {
         text-align: center;
-        font-size: 130%;
+        font-size: 260%;
         font-weight: bold;
         margin-bottom: 5px;
     }
     .skills p {
-        font-size: 100%;
+        font-size: 130%;
         margin-top: 5px;
         line-height: 1.25em;
     }
@@ -176,36 +176,41 @@ ul {
     /* Education */
     .education h3 {
         text-align: center;
-        font-size: 130%;
+        font-size: 260%;
         font-weight: bold;
         margin-bottom: 5px;
     }
     .education .p {
         display: flex;
         justify-content: space-evenly;
+        font-size: 130%;
+        text-align: center;
     }
     .education .p p {
         display: block;
         margin: 5px 0 0 0;
+        font-size: 130%;
     }
     .education > p {
         font-size: 100%;
         margin-top: 5px;
+        margin-bottom: 0;
     }
     .education h3:nth-of-type(2) {
         text-align: left;
-        font-size: 100%;
+        font-size: 130%;
+        margin-top: 0px;
     }
 
     /* Volunteer */
     .volunteer h3 {
         text-align: center;
-        font-size: 130%;
+        font-size: 260%;
         font-weight: bold;
         margin-bottom: 5px;
     }
     .volunteer p {
-        font-size: 100%;
+        font-size: 120%;
         margin-top: 5px;
         line-height: 1.25em;
     }
@@ -213,20 +218,21 @@ ul {
     /* Activities */
     .activities h3 {
         text-align: center;
-        font-size: 130%;
+        font-size: 260%;
         font-weight: bold;
         margin-bottom: 5px;
     }
     .activities p {
-        font-size: 100%;
+        font-size: 120%;
         margin-top: 5px;
         line-height: 1.25em;
     }
+    
     /* Footer */
     .footer {
         background-color: rgb(167, 195, 207);
         text-align: center;
-        color: rgb(66, 97, 112);
+        color: rgb(42, 70, 83);
     }
     .footer h3 {
         font-weight: bold;
@@ -242,9 +248,15 @@ ul {
         width: 20%;
         margin: 0 auto
     }
+    .footer img {
+        width: 70%
+    }
+    .footer .second {
+        width: 54%
+    }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     /* Main */
     html {
         width: 100%;
