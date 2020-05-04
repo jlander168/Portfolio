@@ -163,13 +163,13 @@ ul {
         font-family: 'Capriola', sans-serif;
     }
     .sec1 {
-        background-color: rgb(203, 221, 221);
+        background-color: red;
     }
     .sec2 {
-        background-color: rgb(152, 190, 200)
+        background-color: blue
     }
     .sec3 {
-        background-color: rgb(92, 148, 175);
+        background-color: green;
     }
     .sec1 h2, .sec2 h2, .sec3 h2 {
         color: rgba(0, 0, 0, 0.685);
@@ -314,13 +314,13 @@ ul {
         font-family: 'Capriola', sans-serif;
     }
     .sec1 {
-        background-color: rgb(203, 221, 221);
+        background-color: red;
     }
     .sec2 {
-        background-color: rgb(152, 190, 200)
+        background-color: blue
     }
     .sec3 {
-        background-color: rgb(92, 148, 175);
+        background-color: green;
     }
     .sec1 h2, .sec2 h2, .sec3 h2 {
         color: rgba(0, 0, 0, 0.685);

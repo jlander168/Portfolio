@@ -311,6 +311,19 @@ ul {
         display: flex;
         background-color: rgb(190, 190, 190);
     }
+    .middle4 {
+        display: flex;
+        background: red
+    }
+    .middle5 {
+        display: flex;
+        background: black
+    }
+    .middle6 {
+        display: flex;
+        background: gray
+    }
+
     .info1, .info2, .info3 {
         color: rgba(32, 32, 32, .9);
         align-self: center;

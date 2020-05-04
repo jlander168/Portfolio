@@ -450,7 +450,7 @@ ul {
         text-align: center;
         font-size: 300%;
         font-weight: bold;
-        background-color: rgb(92, 148, 175);
+        background-color: red;
     }
     .about h2 {
         margin: 2px 0 0 0 ;
@@ -481,10 +481,10 @@ ul {
         font-size: 60%;
     }
     .sec2 {
-        background-color: rgb(152, 190, 200)
+        background-color: blue
     }
     .sec3 {
-        background-color: rgb(203, 221, 221);
+        background-color: green;
     }
     .space1, .space2 {
         z-index: 2;
@@ -497,7 +497,7 @@ ul {
     
     /* Footer */
     .footer {
-        background-color: rgb(134, 196, 219);
+        background-color: purple;
         text-align: center;
         color: rgb(42, 70, 83);
     }
@@ -505,6 +505,7 @@ ul {
         font-weight: bold;
         margin: 15px 0 5px;
         font-size: 32px;
+        color: red
     }
     .footer a {
         display: block;
