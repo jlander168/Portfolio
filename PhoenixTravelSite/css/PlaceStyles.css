@@ -86,24 +86,15 @@ aside a:hover, aside a:active {
     
 }
 /* Footer Images */
+footer {
+    display: flex;
+}
 footer img {
     width: 5%;
-    position: absolute;
     text-align: none;
 }
 .instagram {
-    width: 3.73%;
-    right: 507px;
-    bottom: -106px;
-}
-.twitter {
-    left: 450px;
-    bottom: -114px;
-}
-.facebook {
-    width: 5.5%;
-    bottom: -116px;
-    left: 540px;
+    width: 4%;
 }
 /* Hover Styles */
 aside.box img {
