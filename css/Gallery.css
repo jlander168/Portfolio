@@ -299,27 +299,27 @@ ul {
         from {top: 100px; opacity: 0;}
         to {top: 0px; opacity: 1;}
     }
-    .middle1 {
+    .middle2 {
         display: flex;
         background-color: rgb(252, 170, 63);
     }
-    .middle2 {
+    .middle3 {
         display: flex;
         background-color: rgb(253, 206, 145);
     }
-    .middle3 {
+    .middle4 {
         display: flex;
         background-color: rgb(190, 190, 190);
     }
-    .middle4 {
+    .middle1 {
         display: flex;
-        background: red
-    }
-    .middle5 {
-        display: flex;
-        background: black
+        background: rgb(252, 29, 0)
     }
     .middle6 {
+        display: flex;
+        background: rgb(78, 78, 78)
+    }
+    .middle5 {
         display: flex;
         background: gray
     }
