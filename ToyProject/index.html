@@ -27,13 +27,13 @@
                 </br>
                 Brawl allows the player to select from thirty seven playable characters. Dr. Mario, Roy, Young Link, Mewtwo, and Pichu were cut from the previous game but they do appear as stickers/trophies.
                 </p>
-                <img src="images/SolidSnake.png" alt="snake" class="about"><img src="images/Sonic.png" alt="sonic" class="sonic">
+                <img src="images/SolidSnake.png" alt="snake" class="about" onmouseover="scalyBoi()" onmouseout="scalyBoiOut()"><img src="images/Sonic.png" alt="sonic" class="sonic" onmouseover="scalyBoi()" onmouseout="scalyBoiOut()">
             </br>
             </div>
             <div class="box item-f">
                 <h2>Items</h2>
                 <p>There are fourty nine items in the game and you can choose whether or not you wanna toggle them. <a href="https://www.smashbros.com/wii/en_us/items/item15.html" target="_blank">Learn More About Items</a></p>
-                <img src="images/Items.png" alt="items">
+                <img src="images/Items.png" alt="items" onmouseover="scalyBoi()" onmouseout="scalyBoiOut()">
                 
             </div>
             <footer class="box item-g">
@@ -42,5 +42,15 @@
                 <a href="https://www.facebook.com/Nintendo/" target="_blank"><img src="images/facebook.png" alt="facebook" class="facebook"></a>
             </footer>
         </div>
+        <script>
+            function scalyBoi(obj) {
+                obj.style.transform = "scale(.9)";
+                obj.style.transition = "all .5s ease"
+            }
+            function scalyBoiOut(obj) {
+                obj.style.transform = "scale(1)";
+                obj.style.transition = "all .5s ease"
+            }
+        </script>
     </body>
 </html>
